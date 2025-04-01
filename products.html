@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo" title="beck.com" style="color: rgb(0, 255, 42);"><big>Beck</big><tt style="color: white;"><big>.</big>com</tt></div>
+        <div class="pages">
+            <a href="home.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="contacts.html">contacts</a>
+        </div>
+        <div class="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <div class="products">
+        <!-- Product Cards -->
+        <div class="product-card" data-id="1" data-name="Tees" data-price="9.99">
+            <a href="images/474019042_1287230749151457_4126917062877284895_n.jpg">
+            <img src="images/474019042_1287230749151457_4126917062877284895_n.jpg" alt="Product 1" class="product-image"></a>
+            <h3 class="product-title">Tees</h3>
+            <p class="product-price">$9.99</p>
+            <button class="add-to-cart" title="Add to cart"  onclick="clicked_1()"><p id="added-1">Add to Cart</p></button>
+        </div>
+        
+
+        <div class="product-card" data-id="2" data-name="Combo" data-price="39.99">
+            <a href="images/471312449_2279923679061550_3303634668335468911_n.jpg">
+            <img src="images/471312449_2279923679061550_3303634668335468911_n.jpg" alt="Product 2" class="product-image"></a>
+            <h3 class="product-title">Combo</h3>
+            <p class="product-price">$39.99</p>
+            <button class="add-to-cart"  onclick="clicked_2()" ><p id="added-2">Add to Cart</p></button>
+        </div>
+        <div class="product-card" data-id="3" data-name="Tees and baggy blue-black" data-price="19.99">
+            <a href="images/474041713_609906311427296_4916775534518897699_n.jpg">
+            <img src="images/474041713_609906311427296_4916775534518897699_n.jpg" alt="Product 3" class="product-image"></a>
+            <h3 class="product-title">Tees and baggy</h3>
+            <p class="product-price">$19.99</p>
+            <button class="add-to-cart" onclick="clicked_3()"><p id="added-3">Add to Cart</button>
+        </div>
+        
+        <div class="product-card" data-id="4" data-name="Tees and baggy white-black" data-price="39.99">
+            <a href="images/473999285_1141309154370193_2593408792894294116_n.jpg">
+            <img src="images/473999285_1141309154370193_2593408792894294116_n.jpg" alt="Product 4" class="product-image"></a>
+            <h3 class="product-title">Tees and baggy</h3>
+            <p class="product-price">$39.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="5" data-name="Tees and baggy black-skyblue" data-price="39.99">
+            <a href="images/473792286_1425987661476842_754710011975269753_n.jpg">
+            <img src="images/473792286_1425987661476842_754710011975269753_n.jpg" alt="Product 5" class="product-image"></a>
+            <h3 class="product-title">Tees and baggy</h3>
+            <p class="product-price">$39.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="6" data-name="combo" data-price="39.99">
+            <a href="images/473827359_635175958949409_398124472194283876_n.jpg">
+            <img src="images/473827359_635175958949409_398124472194283876_n.jpg" alt="Product 6" class="product-image"></a>
+            <h3 class="product-title">Tees and baggy</h3>
+            <p class="product-price">$39.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+
+
+    <div class="product-card" data-id="8" data-name="White nike shirt&baggy" data-price="29.99">
+        <a href="https://instagram.fccj8-1.fna.fbcdn.net/v/t51.2885-15/485655924_17901718344151609_7656571771757831942_n.jpg?se=-1&stp=dst-jpegr_e35_p640x640_sh0.08_tt6&cb=30a688f7-fa102a98&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTgwMC5oZHIuZjc1NzYxLmRlZmF1bHRfaW1hZ2UifQ&_nc_ht=instagram.fccj8-1.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2QEBcxFa4B4mSUYzjBto47h8Wyye8bhwKXuGQxNfVqPythaTTyI3NVnCvMqS_I_gRKE&_nc_ohc=UzVZtrO-ljQQ7kNvgHLSNc0&_nc_gid=fFj6Qx36Wr7Sear_0DR12Q&edm=APoiHPcBAAAA&ccb=7-5&ig_cache_key=MzU5NDY2ODIxNTA4MDMxOTA1NA%3D%3D.3-ccb7-5-cb30a688f7-fa102a98&oh=00_AYHU0vuEJLrKG_oS7xj4oFFaqnklJlHCqZQJS08b_weW6g&oe=67EEEFA3&_nc_sid=22de04">
+        <img src="images/trndnikewhite.jpg" alt="nike1" class="product-image"></a>
+        <h3 class="product-title">nikeshirt&baggy</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="9" data-name="nike shirt" data-price="19.99">
+        <a href="images/nike2.jpg">
+        <img src="images/nike2.jpg" alt="nike2" class="product-image"></a>
+        <h3 class="product-title">nike shirt</h3>
+        <p class="product-price">$19.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="10" data-name="nike shirt" data-price="19.99">
+        <a href="images/nike3.jpg">
+        <img src="images/nike3.jpg" alt="nike" class="product-image"></a>
+        <h3 class="product-title">nike shirt</h3>
+        <p class="product-price">$19.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="11" data-name="nike shirt" data-price="19.99">
+        <a href="images/nike4.jpg">
+        <img src="images/nike4.jpg" alt="nike" class="product-image"></a>
+        <h3 class="product-title">nike shirt</h3>
+        <p class="product-price">$19.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="12" data-name="nike shirt" data-price="19.99">
+        <a href="images/nike5.jpg">
+        <img src="images/nike5.jpg" alt="nike" class="product-image"></a>
+        <h3 class="product-title">nike shirt</h3>
+        <p class="product-price">$19.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="13" data-name="nbshirt&baggy" data-price="29.99">
+        <a href="images/nb1.jpg">
+        <img src="images/nb1.jpg" alt="NB" class="product-image"></a>
+        <h3 class="product-title">NBshirt&baggy</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="14" data-name="nbshirt&baggy" data-price="29.99">
+        <a href="images/nb2.jpg">
+        <img src="images/nb2.jpg" alt="NB" class="product-image"></a>
+        <h3 class="product-title">NBshirt&baggy</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <!-- combo -->
+    <div class="product-card" data-id="15" data-name="combo" data-price="29.99">
+        <a href="images/combo1.jpg">
+        <img src="images/combo1.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="16" data-name="combo" data-price="29.99">
+        <a href="images/combo2.jpg">
+        <img src="images/combo2.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="17" data-name="combo" data-price="29.99">
+        <a href="images/combo3.jpg">
+        <img src="images/combo3.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="18" data-name="combo" data-price="29.99">
+        <a href="images/combo4.jpg">
+        <img src="images/combo4.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="19" data-name="combo" data-price="29.99">
+        <a href="images/combo5.jpg">
+        <img src="images/combo5.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="20" data-name="combo" data-price="29.99">
+        <a href="images/combo6.jpg">
+        <img src="images/combo6.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="21" data-name="combo" data-price="29.99">
+        <a href="images/combo7.jpg">
+        <img src="images/combo7.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="22" data-name="combo" data-price="29.99">
+        <a href="images/combo8.jpg">
+        <img src="images/combo8.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="23" data-name="combo" data-price="29.99">
+        <a href="images/combo9.jpg">
+        <img src="images/combo9.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="24" data-name="combo" data-price="29.99">
+        <a href="images/combo10.jpg">
+        <img src="images/combo10.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="25" data-name="combo" data-price="29.99">
+        <a href="images/combo11.jpg">
+        <img src="images/combo11.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="26" data-name="combo" data-price="29.99">
+        <a href="images/combo12.jpg">
+        <img src="images/combo12.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="27" data-name="combo" data-price="29.99">
+        <a href="images/combo13.jpg">
+        <img src="images/combo13.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="28" data-name="combo" data-price="29.99">
+        <a href="images/combo14.jpg">
+        <img src="images/combo14.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="29" data-name="combo" data-price="29.99">
+        <a href="images/combo15.jpg">
+        <img src="images/combo15.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="30" data-name="combo" data-price="29.99">
+        <a href="images/combo4.jpg">
+        <img src="images/combo4.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="31" data-name="combo" data-price="29.99">
+        <a href="images/combo4.jpg">
+        <img src="images/combo4.jpg" alt="combo" class="product-image"></a>
+        <h3 class="product-title">Combo</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <!-- baggy -->
+    <div class="product-card" data-id="32" data-name="baggy" data-price="29.99">
+        <a href="images/baggy1.jpg">
+        <img src="images/baggy1.jpg" alt="baggy" class="product-image"></a>
+        <h3 class="product-title">baggy</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="33" data-name="baggy" data-price="29.99">
+        <a href="images/baggy2.jpg">
+        <img src="images/baggy2.jpg" alt="baggy" class="product-image"></a>
+        <h3 class="product-title">baggy</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="34" data-name="baggy" data-price="29.99">
+        <a href="images/baggy3.jpg">
+        <img src="images/baggy3.jpg" alt="baggy" class="product-image"></a>
+        <h3 class="product-title">baggy</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="35" data-name="baggy" data-price="29.99">
+        <a href="images/baggy4.jpg">
+        <img src="images/baggy4.jpg" alt="baggy" class="product-image"></a>
+        <h3 class="product-title">baggy</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+     <!--  -->
+    <div class="product-card" data-id="36" data-name="Product 8" data-price="29.99">
+        <a href="images/balancia.jpg">
+        <img src="images/balancia.jpg" alt="Product 8" class="product-image"></a>
+        <h3 class="product-title">Tees</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="37" data-name="Product 9" data-price="29.99">
+        <a href="images/balanciadarkblue.jpg">
+        <img src="images/balanciadarkblue.jpg" alt="Product 9" class="product-image"></a>           
+        <h3 class="product-title">Tees</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="38" data-name="Product 10" data-price="29.99">
+        <a href="images/oreo.jpg">
+        <img src="images/oreo.jpg" alt="Product 10" class="product-image"></a>
+        <h3 class="product-title">Tees and baggy</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="39" data-name="Product 11" data-price="29.99">
+        <a href="images/white.jpg">
+        <img src="images/white.jpg" alt="Product 11" class="product-image"></a>
+        <h3 class="product-title">Tees and baggy</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="40" data-name="Product 12" data-price="29.99">
+        <a href="images/black.jpg">
+        <img src="images/black.jpg" alt="Product 12" class="product-image"></a>
+        <h3 class="product-title">Tees and baggy</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart" >Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="41" data-name="Product " data-price="29.99">
+        <a href="images/db.jpg">
+        <img src="images/db.jpg" alt="Product 13" class="product-image"></a>
+        <h3 class="product-title">Tees and baggy</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="42" data-name="Product 14" data-price="29.99">
+        <a href="images/full.jpg">
+        <img src="images/full.jpg" alt="Product 14" class="product-image"></a>
+        <h3 class="product-title">Tees and baggy</h3>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <h2>Shopping Cart</h2>
+        <button class="close-cart">&times;</button><br>
+        <ul class="cart-items"></ul><br>
+        <div class="cart-total">Total: $<span id="total">0</span></div>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p style="margin-left: -99px;">&copy; 2025 Beck.com. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://x.com/?lang=en-in">Twitter</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+    <script src="javascript.js">
+        
+    </script>
+    
+</body>
+</html>
